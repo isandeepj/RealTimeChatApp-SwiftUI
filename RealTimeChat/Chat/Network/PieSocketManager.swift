@@ -13,7 +13,7 @@ class PieSocketManager {
     static let shared = PieSocketManager()
     
     private var piesocket: PieSocket?
-    private var channels: [String: Channel] = [:]  // ✅ Manage multiple channels
+    private var channels: [String: Channel] = [:]  // Manage multiple channels
     private var listeners: [String: [String]] = [:] // roomId -> list of listenerIds
     
     let messagePublisher = PassthroughSubject<PublicMessagePayload, Never>()
